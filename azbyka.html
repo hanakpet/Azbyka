@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My little azbuka game.</title>
+</head>
+<body>
+<h1> Lets have some fun !!!</h1>
+<p id="demo">Click the button to display a random number.
+</p>
+
+<button onclick="myFunction()">Try it!!!</button>
+
+<p>Click the button to display azbuka.</p>
+<button onclick="repeat()">Display letters of russian alphabet.</button>
+<p id="azbuka2"></p>
+
+<script>
+function repeat()
+{
+var azbuka=new Array("&#1040;"
+,"&#1041;"
+,"&#1042;"
+,"&#1043;"
+,"&#1044;"
+,"&#1045;"
+,"&#1046;"
+,"&#1047;"
+,"&#1048;"
+,"&#1049;"
+,"&#1050;"
+,"&#1051;"
+,"&#1052;"
+,"&#1053;"
+,"&#1054;"
+,"&#1055;"
+,"&#1056;"
+,"&#1057;"
+,"&#1058;"
+,"&#1059;"
+,"&#1060;"
+,"&#1061;"
+,"&#1062;"
+,"&#1063;"
+,"&#1064;"
+,"&#1065;"
+,"&#1066;"
+,"&#1067;"
+,"&#1068;"
+,"&#1069;"
+,"&#1070;"
+,"&#1071;");
+var x="";
+for(var i=0; i<=31; i++)
+  {
+  x= x + "The letter " + azbuka[i] + "  has number " + (i+1040) + " " + "<br>";
+  }
+document.getElementById("azbuka2").innerHTML=x;
+
+<!--document.write(Math.floor((Math.random()*32)+1));-->
+<!--Math.floor((Math.random()*32)+1);-->
+}
+</script>
+
+
+<script>
+function random32()
+{
+Math.floor((Math.random()*32)+1);
+}
+</script>
+
+
+<script>
+function myFunction()
+{
+var azbukaaa=new Array("&#1040;"
+,"&#1041;"
+,"&#1042;"
+,"&#1043;"
+,"&#1044;"
+,"&#1045;"
+,"&#1046;"
+,"&#1047;"
+,"&#1048;"
+,"&#1049;"
+,"&#1050;"
+,"&#1051;"
+,"&#1052;"
+,"&#1053;"
+,"&#1054;"
+,"&#1055;"
+,"&#1056;"
+,"&#1057;"
+,"&#1058;"
+,"&#1059;"
+,"&#1060;"
+,"&#1061;"
+,"&#1062;"
+,"&#1063;"
+,"&#1064;"
+,"&#1065;"
+,"&#1066;"
+,"&#1067;"
+,"&#1068;"
+,"&#1069;"
+,"&#1070;"
+,"&#1071;");
+
+document.getElementById("demo").innerHTML=(Math.floor(Math.random()*32)+1);
+
+
+}
+</script>
+
+<p>
+
+<h3> Assign azbuka characters into an array.</h3>
+<script>
+var azbuka=new Array("&#1040;"
+,"&#1041;"
+,"&#1042;"
+,"&#1040;" 
+,"&#1041;"
+,"&#1042;"
+,"&#1043;"
+,"&#1044;"
+,"&#1045;"
+,"&#1046;"
+,"&#1047;"
+,"&#1048;"
+,"&#1049;"
+,"&#1050;"
+,"&#1051;"
+,"&#1052;"
+,"&#1053;"
+,"&#1054;"
+,"&#1055;"
+,"&#1056;"
+,"&#1057;"
+,"&#1058;"
+,"&#1059;"
+,"&#1060;"
+,"&#1061;"
+,"&#1062;"
+,"&#1063;"
+,"&#1064;"
+,"&#1065;"
+,"&#1066;"
+,"&#1067;"
+,"&#1068;"
+,"&#1069;"
+,"&#1070;"
+,"&#1071;");
+
+</script>
+
+
+<script>
+var i;
+var mycars = new Array();
+mycars[0] = "Saab";
+mycars[1] = "Volvo";
+mycars[2] = "BMW";
+
+for(i=0; i<mycars.length; i++)
+{
+  document.write(mycars[i] + "<br>");
+}
+</script>
+
+<!--<script>
+
+alert("My First JavaScript");
+document.write("<h4> This is a heading</h4>");
+
+</script>
+-->
+<h3> Display a random letter in uppercase Russian alphabet.</h3>
+document.write(Math.random());
+<br><br>
+// 1 out of 32 characters
+<br><br>
+&#1040; 
+,&#1041;
+,&#1042;
+,&#1043;
+,&#1044;
+,&#1045;
+,&#1046;
+,&#1047;
+,&#1048;
+,&#1049;
+,&#1050;
+,&#1051;
+,&#1052;
+,&#1053;
+,&#1054;
+,&#1055;
+,&#1056;
+,&#1057;
+,&#1058;
+,&#1059;
+,&#1060;
+,&#1061;
+,&#1062;
+,&#1063;
+,&#1064;
+,&#1065;
+,&#1066;
+,&#1067;
+,&#1068;
+,&#1069;
+,&#1070;
+,&#1071;
+<br>
+<br>
+&#1072;
+&#1073;
+&#1074;
+&#1075;
+&#1076;
+&#1077;
+&#1078;
+&#1079;
+&#1080;
+&#1081;
+&#1082;
+&#1083;
+&#1084;
+&#1085;
+&#1086;
+&#1087;
+&#1088;
+&#1089;
+&#1090;
+&#1091;
+&#1092;
+&#1093;
+&#1094;
+&#1095;
+&#1096;
+&#1097;
+&#1098;
+&#1099;
+&#1100;
+&#1101;
+&#1102;
+&#1103;
+
+<br>
+<!-- Make something like virtual keyboard -->
+<br>
+</p>
+
+</body>
+</html>
