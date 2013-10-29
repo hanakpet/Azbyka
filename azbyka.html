@@ -1,9 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>My little azbuka game.</title>
+<title> Little azbyka game</title>
+
+<script>
+function startTime()
+{
+var azb = new Array("&#1040;"
+,"&#1041;","&#1042;","&#1043;","&#1044;","&#1045;","&#1046;","&#1047;","&#1048;","&#1049;","&#1050;"
+,"&#1051;","&#1052;","&#1053;","&#1054;","&#1055;","&#1056;","&#1057;","&#1058;","&#1059;","&#1060;"
+,"&#1061;","&#1062;","&#1063;","&#1064;","&#1065;","&#1066;","&#1067;","&#1068;","&#1069;","&#1070;"
+,"&#1071;");
+//document.getElementById('txt').innerHTML=azb[5];
+var today=new Date();
+var h=today.getHours();
+var m=today.getMinutes();
+var s=today.getSeconds();
+// add a zero in front of numbers<10
+m=checkTime(m);
+s=checkTime(s);
+var d = Math.floor((Math.random()*32)+1);
+document.getElementById('txt').innerHTML=azb[d-1];
+t=setTimeout(function(){startTime()},750);
+}
+
+function checkTime(i)
+{
+if (i<10)
+  {
+  i="0" + i;
+  }
+return i;
+}
+</script>
 </head>
+
 <body>
+<div style="font-size:100pt" id="txt"></div>
+<button onclick="startTime()">Get Dizzy!!!</button>
 <script>
 function ready()
 {
@@ -26,7 +60,14 @@ document.getElementById("demo").innerHTML=azbuk[a-1];
 
 <button onclick="ready()">Azbuka!!!</button>
 
+
+
+
+
+
+
 <p>Click the button to display azbuka.</p>
+
 <button onclick="repeat()">Display letters of russian alphabet.</button>
 <p id="azbuka2"></p>
 
